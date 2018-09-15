@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cctv</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!--  For Amcharts testing -->
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Pacifico|Shadows+Into+Light|Signika" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Kaushan+Script" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+
+    let amchartsData = { "type": "serial", "addClassNames": true, "theme": "light", "autoMargins": false, "marginLeft": 30, "marginRight": 8, "marginTop": 30, "marginBottom": 30, "allLabels": [{ "text": "Hourly Rates During the Weekdays of Summer Months", "size": 18, "align": "center", "y": 0 }], "balloon": { "adjustBorderColor": false, "horizontalPadding": 10, "verticalPadding": 8, "color": "#000000", "fillColor": "#FFFFFF" }, "dataProvider": [{ "hours": "12:00AM", "hourShown": "12:01AM", "price": "0.0597", "priceShown": "$ 0.06", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "1:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "2:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "3:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "4:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "5:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "6:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "7:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "8:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "9:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "10:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "11:01AM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "12:01PM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "1:00PM", "hourShown": "1:01PM", "price": "0.42644", "priceShown": "$ 0.43", "color": "#ff9933", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "2:01PM", "price": "0.42644", "priceShown": "", "color": "#ff9933", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "3:01PM", "price": "0.42644", "priceShown": "", "color": "#ff9933", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "4:01PM", "price": "0.42644", "priceShown": "", "color": "#ff9933", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "5:01PM", "price": "0.42644", "priceShown": "", "color": "#ff9933", "rateForCompareValue": 0.09024 }, { "hours": "6:00PM", "hourShown": "6:01PM", "price": "0.0597", "priceShown": "$ 0.06", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "7:01PM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "8:01PM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "9:01PM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "10:01PM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "", "hourShown": "11:01PM", "price": "0.0597", "priceShown": "", "color": "#ffc489", "rateForCompareValue": 0.09024 }, { "hours": "12:00 AM", "price": 0, "priceShown": "" }], "valueAxes": [{ "axisAlpha": 0, "position": "left", "gridThickness": 1, "precision": 2, "offset": -8, "ignoreAxisWidth": true, "unit": "$", "unitPosition": "left", "minimum": 0, "maximum": 0.6 }], "startDuration": 0, "graphs": [{ "alphaField": "alpha", "balloonText": "<span style=\"font-size:12px;\"><b>[[title]]</b> <br><span>[[hourShown]] : [[value]] per kWh</span></span>", "fillAlphas": 1, "title": "Rate Schedule", "type": "column", "hourShownField": "hourShown", "labelText": "[[priceShown]]", "priceShownField": "priceShown", "valueField": "price", "colorField": "color", "columnWidth": "1", "dashLengthField": "dashLengthColumn", "lineColor": "#FFFFFF" }, { "id": "graph2", "balloonText": "<span style=\"font-size:12px;\"><b>[[title]]</b> <br><span>[[hourShown]] : [[value]] per kWh</span></span>", "bullet": "round", "lineThickness": 2, "bulletSize": 3, "bulletBorderAlpha": 1, "bulletColor": "#FFFFFF", "useLineColorForBulletBorder": true, "bulletBorderThickness": 2, "fillAlphas": 0, "lineAlpha": 1, "lineColor": "#999999", "title": "compare to standard rate", "valueField": "rateForCompareValue", "dashLengthField": "dashLengthLine", "hourShownField": "hourShown", "color": "#999999" }], "categoryField": "hours", "categoryAxis": { "gridPosition": "start", "labelRotation": 35, "gridThickness": 0, "axisAlpha": 0, "tickLength": 0, "renderer": { "labels": { "template": { "location": 0 } } } }, "export": { "enabled": true }, "legend": { "equalWidths": true, "useGraphSettings": true, "position": "bottom", "align": "center", "valueWidth": 100, "titleBold": true, "bold": true, "useMarkerColorForValues": true, "switchable": true, "switchColor": "#FFFFFF", "switchType": "x", "data": [{ "title": "Rate Schedule", "color": "#66cc99", "markerType": "circle", "markerSize": 10, "markerLabelGap": 10 }, { "title": "compare to standard rate", "color": "#999999", "markerType": "line", "markerSize": 10, "markerBorderThickness": 3, "markerLabelGap": 10 }] }, "numberFormatter": { "precision": -1, "decimalSeparator": ".", "thousandsSeparator": "," }, "responsive": { "enabled": true, "addDefaultRules": false, "rules": [{ "minWidth": 600, "maxWidth": 800, "overrides": { "allLabels": [{ "size": 15 }], "legend": { "markerSize": 8 } } }, { "minWidth": 400, "maxWidth": 600, "overrides": { "allLabels": [{ "size": 13 }], "legend": { "markerSize": 8 } } }, { "minWidth": 200, "maxWidth": 400, "overrides": { "allLabels": [{ "size": 11 }], "legend": { "markerSize": 8 } } }] } };
+    for (let i = 1; i <= 15; i++) {
+      var data = clone(amchartsData)
+      AmCharts.makeChart("chartdiv" + i, data);
+    }
+    function clone(obj) {
+      var copy;
+
+      // Handle the 3 simple types, and null or undefined
+      if (null == obj || "object" != typeof obj) return obj;
+
+      // Handle Date
+      if (obj instanceof Date) {
+        copy = new Date();
+        copy.setTime(obj.getTime());
+        return copy;
+      }
+
+      // Handle Array
+      if (obj instanceof Array) {
+        copy = [];
+        for (var i = 0, len = obj.length; i < len; i++) {
+          copy[i] = clone(obj[i]);
+        }
+        return copy;
+      }
+
+      // Handle Object
+      if (obj instanceof Object) {
+        copy = {};
+        for (var attr in obj) {
+          if (obj.hasOwnProperty(attr)) copy[attr] = clone(obj[attr]);
+        }
+        return copy;
+      }
+
+      throw new Error("Unable to copy obj! Its type isn't supported.");
+    }
+
+/**
+ * Create first chart
+ */
+
+// create a copy of the universal config
+
+
+
+
+
+  </script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>

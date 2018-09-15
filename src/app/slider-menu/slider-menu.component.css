@@ -1,0 +1,77 @@
+div {
+    height:100vh;
+    position: relative;
+    background-color:#84817a;
+    /* transform: translateX(-200px); */
+}
+
+.main-menu {
+    list-style-type: none;
+    z-index: 4;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    top:100px;
+    background-color: white;
+    transition-duration: 0.8s;
+    transform: translateX(-200px);
+}
+
+.transform {
+    transform: translateX(0px);
+}
+.main-menu li a {
+    display: block;
+    color: #000;
+    padding: 24px 24px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Change the link color on hover */
+.main-menu li:hover {
+    background-color: #eee2dc;
+    color: white;
+}
+
+.sub-menu-services {
+    list-style-type: none;
+    width: 180px;
+    background-color: #eee2dc;
+    position: absolute;
+    display:none;
+    left:200px;
+    top:73px;
+}
+
+.main-menu li:hover .show-menu {
+    display: block;
+}
+.sub-menu-services li a:hover{
+    background-color: white;
+    color:#555;
+}
+
+@media only screen and (max-width: 600px) {
+.main-menu {
+    width:140px;
+    opacity: 0.9;
+}
+.sub-menu-services {
+    list-style-type: none;
+    width: 180px;
+    background-color: #eee2dc;
+    position: absolute;
+    display:none;
+    left:140px;
+    top:73px;
+}
+.sub-menu-services {
+    top:60px;
+}
+.main-menu li a {
+    padding: 18px 18px;
+}
+}

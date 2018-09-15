@@ -1,0 +1,41 @@
+div {
+    height:80vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url('../../../images/djspinners_0.jpg');
+    background-size: auto;
+}
+
+
+h3 {
+    position: relative;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    top:50px;
+    margin-left: 20px;
+    color:white;
+}
+ul {
+    margin-top:75px;
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 20px;
+    list-style: none;
+    font-size: 45px;
+    text-align: justify;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    div {
+        height:76vh;
+        background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url('../../../images/djspinners_0.jpg');
+        background-size: cover;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    ul {
+        margin-top:75px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+}

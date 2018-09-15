@@ -1,0 +1,29 @@
+<div class="wrapper">
+
+    <div [ngClass]="{'transform-y-up':isScreenOpen}" class="top-screen">
+        <p class="title">
+            - Your Satisfaction is our responsibility !
+        </p>
+    </div>
+    <div [ngClass]="{'transform-y-down':isScreenOpen}" class="bottom-screen">
+        <a href="#" (click)="openScreen()" class="glassy-button-bottom">
+            Get Started !
+            <i></i>
+        </a>
+    </div>
+    <div [ngClass]="{'show-opacity':isScreenOpen}" class="behind-screen">
+        <p class="service-review">
+            The Decoration Service was Top Notch
+            <br> -- Prince Gajendrababu (Navabharath School Correspondant)
+            <br>
+            <a href="#" class="customer-rating-button" (click)="closeScreen()">
+                Rate us ?
+                <i></i>
+            </a>
+            <a href="#" class="what-we-do-button" (click)="closeScreen()">
+                What we do ?
+                <i></i>
+            </a>
+
+
+    </div>

@@ -1,0 +1,44 @@
+div {
+    height:85vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url('../../../images/132140_GettyImages-175537524-entrepreneur.jpg');
+    background-size: cover;
+    overflow: auto;
+}
+
+h3 {
+    margin-top:50px;
+    font-size: 50px;
+    margin-left:20px;
+    font-family: 'Monoton', cursive;
+    color:white;
+}
+
+ul {
+    word-spacing: 4px;
+    margin-top :40px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    list-style: none;
+}
+
+li {
+    text-align: justify;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    div {
+        height:76vh;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url('../../../images/132140_GettyImages-175537524-entrepreneur.jpg');
+        background-size: auto;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    ul {
+        margin-top: 15px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}

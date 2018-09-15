@@ -1,0 +1,342 @@
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.behind-screen {
+  border: 1px solid black;
+  box-shadow: 18px 10px 5px 0px rgba(0,0,0,0.75);
+  position: relative;
+  margin-left: 15%;
+  margin-top: -5%;
+}
+
+.customer-rating-button,.what-we-do-button {
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  margin-left: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: #FAFAFA;
+  border: 2px solid #FAFAFA;
+  padding: 5px;
+  border-radius: 30px;
+  position: relative;
+}
+/* .service-review  {
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  margin-left: 100px;
+  color:white;
+  text-align: center;
+}
+
+.review-sign  {
+  font-family: 'Great Vibes', cursive;
+  font-size: 20px;
+  color:white;
+  margin-left: 30px;
+  text-align: center;
+} */
+.user-rating-heading {
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.fa {
+  font-size: 25px;
+}
+.first-star {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.star-rating {
+  top:0px;
+
+}
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+
+.top-screen {
+  /* background-color: green; */
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+
+.transform-y-up {
+  transform: translateY(-130%);
+}
+
+.transform-y-down {
+  transform: translateY(130%);
+}
+
+.behind-screen {
+  position: absolute;
+  transform: translateX(150%);
+  left:20%;
+  top:50%;
+  /* font-size: 100px; */
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.show-opacity {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.bottom-screen {
+  overflow: hidden;
+  /* background-color:blue; */
+  height:300px;
+  transition: all 1s ease-in;
+}
+.top-screen p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.glassy-button-bottom {
+  margin-left: 43%;
+  width: 250px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: #FAFAFA;
+  border: 3px solid #FAFAFA;
+  padding: 15px;
+  border-radius: 30px;
+  position: relative;
+}
+  a {
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: background 0.15s ease-in-out;
+    -moz-transition: background 0.15s ease-in-out;
+    -ms-transition: background 0.15s ease-in-out;
+    -o-transition: background 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
+  }
+  a:hover {
+    background: rgba(8, 97, 76, 0.6);
+  }
+  
+  i {
+    /*   positioning */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    /*   gradient   */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.85)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 */
+    /*  forming the shine element
+        play around with the width, skew and gradient to get different effects
+      */
+    width: 15%;
+    height: 100%;
+    transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -moz-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    /*  animating it  */
+    animation: move 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    -webkit-animation: move 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+    -moz-transform: skew(-10deg, 0deg);
+    -moz-animation: move 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 1s;
+    -ms-transform: skew(-10deg, 0deg);
+    -ms-animation: move 2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-delay: 1s;
+    -o-transform: skew(-10deg, 0deg);
+    -o-animation: move 2s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-delay: 1s;
+  }
+  
+ 
+  @keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.4;
+    }
+    48% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    100% {
+      left: 82%;
+    }
+  }
+  /*
+  @-webkit-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.0;
+    }
+    48% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.0;
+    }
+    100% {
+      left: 82%;
+    }
+  }
+  @-moz-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.0;
+    }
+    48% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.0;
+    }
+    100% {
+      left: 88%;
+    }
+  }
+  @-ms-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.0;
+    }
+    48% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.0;
+    }
+    100% {
+      left: 82%;
+    }
+  }
+  @-o-keyframes move {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.0;
+    }
+    48% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.0;
+    }
+    100% {
+      left: 82%;
+    }
+  }
+   */
+
+
+@media only screen and (max-width: 600px) {
+
+  .behind-screen {
+    left:-20%;
+    top:50%;
+    /* font-size: 100px; */
+  }
+  .customer-rating-button {
+    margin-left: 160px;
+    font-size: 10px;
+  }
+  .what-we-do-button {
+    margin-left: 460px;
+    font-size: 10px;
+  }
+    p {
+        text-align: center;
+        font-size: 40px;
+        color:white;
+        margin-top: 150px;
+    }
+
+    a {
+        margin-left: 20%;
+        /* margin-top: -80px; */
+    }
+}

@@ -1,0 +1,39 @@
+
+
+h3 {
+    margin-top:50px;
+    font-size: 50px;
+    margin-left:20px;
+    font-family: 'Monoton', cursive;
+    color:white;
+    text-align: center;
+}
+
+ul {
+    word-spacing: 4px;
+    text-align: center;
+    margin-top :40px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+    list-style: none;
+}
+i {
+    color: black;
+    font-size: 30px;
+}
+li {
+    text-align: center;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+ h3 {
+     font-size: 30px;
+ }
+
+ ul {
+     font-size: 15px;
+     margin-right: 20px;
+ }
+}

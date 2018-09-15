@@ -1,0 +1,55 @@
+div {
+    height:85vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url('../../../images/wedding.jpg');
+    background-size: cover;
+    overflow: auto;
+}
+h3 {
+    margin-top:50px;
+    font-size: 50px;
+    margin-left:20px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color:white;
+}
+
+ul {
+    margin-top :100px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    div {
+        height:76vh;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url('../../../images/wedding.jpg');
+        background-size: cover;
+    }
+    h3 {
+        font-size: 25px;
+        font-family: 'Pacifico', cursive;
+        color:white;
+    }
+    
+    ul {
+        margin-top :100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-family: 'Pacifico', cursive;
+        list-style: none;
+    }
+    
+    li {
+        text-align: justify;
+        color:white;
+    }
+    
+}

@@ -1,0 +1,90 @@
+<app-header></app-header>
+<app-slider-menu></app-slider-menu>
+<app-home *ngIf="currentMenu==='home'"></app-home>
+<app-catering-component *ngIf="currentMenu==='catering'"></app-catering-component>
+<app-cctv *ngIf="currentMenu==='cctv'"></app-cctv>"
+<app-djcomponent *ngIf="currentMenu=='dj'"></app-djcomponent>
+<app-wed-decorator-component *ngIf="currentMenu==='wedding'"></app-wed-decorator-component>
+<app-carousel *ngIf="currentMenu==='carousel'"></app-carousel>
+<app-contact-us *ngIf="currentMenu==='contact-us'"></app-contact-us>
+<app-about-us *ngIf="currentMenu==='about-us'"></app-about-us>
+<app-interior-design *ngIf="currentMenu==='interior-design'"></app-interior-design>
+<app-other-services *ngIf="currentMenu==='other-services'"></app-other-services>
+<app-footer></app-footer>
+<!-- <div class="screen">
+  <a [ngClass]="{'translate-y':isScreenOpen}" href="#" (click)="openScreen()">
+    User Rating! 
+    <i></i>
+  </a>
+  <div [ngClass]="{'translate-x':!isScreenOpen}" class="user-rating">
+
+    <span class="heading">User Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <p>4.1 average based on 254 reviews.</p>
+
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>150</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>63</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>15</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>6</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>20</div>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="{'screen-open-top':isScreenOpen}" class="screen-top">
+  </div>
+  <div [ngClass]="{'screen-open-right':isScreenOpen}" class="screen-right"></div>
+</div> -->

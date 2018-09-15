@@ -1,0 +1,68 @@
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(120, 160, 187);
+
+}
+.footer h5 {
+    margin-top: 20px;
+    margin-left:50px;
+    float: left;
+}
+.footer i {
+    cursor: pointer;
+    margin-top:10px;
+    margin-right: 50px;
+    float: right;
+}
+.fab {
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        position: absolute;
+        bottom: 0px;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(120, 160, 187);
+    
+    }
+    .footer h5 {
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left:20px;
+        float: left;
+    }
+    .footer i {
+        cursor: pointer;
+        margin-top:15px;
+        margin-right: 20px;
+        float: right;
+    }
+    .fab {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .footer i {
+        cursor: pointer;
+        margin-top:10px;
+        margin-right: 15px;
+        float: right;
+    }
+    .footer h5 {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left:10px;
+        float: left;
+    }
+    .fab {
+        font-size: 25px;
+    }
+}
+
